@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fdcfa76-e785-4fea-81bc-d237dcbb6367" name="Changes" comment="" />
+    <list default="true" id="6fdcfa76-e785-4fea-81bc-d237dcbb6367" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/android-chrome-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/android-chrome-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/site.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/public/site.webmanifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/Heading.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/Heading.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/Mission.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/Mission.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/Team.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/Team.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/Values.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/Values.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pricing/PricingTable.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pricing/PricingTable.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Layout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Layout.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/pricing.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/pricing.astro" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +69,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739402988393</updated>
-      <workItem from="1739402989422" duration="10614000" />
+      <workItem from="1739402989422" duration="13864000" />
+      <workItem from="1739485757712" duration="1127000" />
     </task>
     <servers />
   </component>
