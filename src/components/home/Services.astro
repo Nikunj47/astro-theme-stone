@@ -2,21 +2,23 @@
 const services = [
   {
     step: '01',
-    name: 'CRM & Pipeline Management',
-    description:
-      'Track leads, manage contacts, and monitor deal stages effortlessly. Get a clear view of your entire sales pipeline in one user-friendly dashboard.',
+    name: 'Campaign Management',
+    description: 'Create and manage multi-channel marketing campaigns across email, SMS, and social media from a single dashboard.',
   },
   {
     step: '02',
-    name: 'Funnel & Website Builder',
-    description:
-      'Build high-converting landing pages and full websites without touching a line of code. Our drag-and-drop builder simplifies your funnel creation.',
+    name: 'Sub-Account Control',
+    description: 'Easily manage multiple client accounts with separate workspaces, permissions, and billing while maintaining central oversight.',
   },
   {
     step: '03',
-    name: 'Marketing Automation & Email Campaigns',
-    description:
-      'Automate your follow-ups, nurture leads, and send personalized email campaigns at scale—so you can focus on strategy instead of tedious tasks.',
+    name: 'Automation Builder',
+    description: 'Visual workflow designer for creating complex marketing automations triggered by user behavior and custom events.',
+  },
+  {
+    step: '04',
+    name: 'Unified Analytics',
+    description: 'Track performance across all sub-accounts with consolidated reporting and ROI measurement tools.',
   },
 ];
 ---
@@ -24,8 +26,8 @@ const services = [
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col gap-12 sm:gap-16">
-      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Services</h2>
-      <div class="grid gap-8 lg:grid-cols-3">
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Core Features</h2>
+      <div class="grid gap-8 lg:grid-cols-4">
         {
           services.map((service) => (
             <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
