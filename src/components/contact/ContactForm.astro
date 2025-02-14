@@ -80,7 +80,7 @@
       const successMessage = document.getElementById('form-success');
 
       form.addEventListener('submit', async function (e) {
-        e.preventDefault(); // Prevent the default submission
+        e.preventDefault(); // Prevent default form submission
 
         const formData = new FormData(form);
 
@@ -88,19 +88,20 @@
           const response = await fetch(form.action, {
             method: form.method,
             headers: {
-              'Accept': 'application/json'
+              'Accept': 'application/json', // Ensures JSON response (no redirect)
             },
-            body: formData
+            body: formData,
           });
 
           if (response.ok) {
-            form.reset(); // Reset the form fields
-            successMessage.classList.remove('hidden'); // Show success message
-            // Optionally, hide the message after 5 seconds
+            // Form submission succeeded
+            form.reset(); // Clear fields
+            successMessage.classList.remove('hidden'); // Show success
             setTimeout(() => {
               successMessage.classList.add('hidden');
             }, 5000);
           } else {
+            // Non-2xx HTTP status
             alert('Oops! There was a problem submitting your form.');
           }
         } catch (error) {
