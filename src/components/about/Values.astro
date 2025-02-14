@@ -5,13 +5,13 @@ const values = [
       ref: '01',
       name: 'Client-Centric Approach',
       description:
-        'We design every feature with multi-account management in mind, ensuring seamless client segregation while maintaining your operational efficiency. Our platform adapts to your workflow, not the other way around.',
+        'We design every feature with multi-user management in mind, ensuring seamless client segregation while maintaining your operational efficiency. Our platform adapts to your workflow, not the other way around.',
     },
     {
       ref: '02',
       name: 'Data Integrity',
       description:
-        'Maintain complete data separation between client accounts with enterprise-grade security. Our robust permission system and encryption protocols ensure every client\'s information remains confidential and protected.',
+        'Our robust permission system and encryption protocols ensure every client\'s information remains confidential and protected.',
     },
   ],
   [
@@ -40,11 +40,11 @@ const values = [
           values.map((column, index) => (
             <div class:list={['space-y-8', index === 1 && 'lg:mt-16']}>
               {column.map((value) => (
-                <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+                <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-4 rounded-3xl px-6 py-8">
                   <p class="text-sm">{value.ref}</p>
-                  <div class="flex flex-col gap-4">
+                  <div class="flex flex-col gap-2">
                     <h3 class="text-xl font-medium">{value.name}</h3>
-                    <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                    <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg text-justify">
                       {value.description}
                     </p>
                   </div>

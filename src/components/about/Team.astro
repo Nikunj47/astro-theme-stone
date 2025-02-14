@@ -2,18 +2,15 @@
 const team = [
   {
     name: 'Amit Wasson',
-    image: '/assets/team-1.webp',
+    image: '/assets/amit.jpeg',
     job: 'Marketing Manager',
+    email: 'amit@example.com',
   },
   {
     name: 'Nikunj Chhabra',
-    image: '/assets/team-2.webp',
+    image: '/assets/nikunj.jpg',
     job: 'Technology Lead',
-  },
-  {
-    name: 'Emily Mitchell',
-    image: '/assets/team-3.webp',
-    job: 'Senior Developer',
+    email: 'nikunj@example.com',
   },
 ];
 ---
@@ -22,20 +19,56 @@ const team = [
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="sm:space-8 space-y-12">
       <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Meet our team</h2>
-      <ul role="list" class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {
-          team.map((item) => (
-            <li class="border-primary-900/10 dark:border-primary-300/10 rounded-3xl border px-6 py-8">
-              <div class="space-y-6">
-                <img class="mx-auto h-auto w-16 rounded-full" src={item.image} alt={item.name} />
-                <div class="text-center">
-                  <h3 class="text-lg font-medium">{item.name}</h3>
-                  <p class="text-primary-950/70 dark:text-primary-200/70 text-base">{item.job}</p>
-                </div>
+      <ul role="list" class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
+        {team.map((item) => (
+          <li
+            key={item.name}
+            class="border-primary-900/10 dark:border-primary-300/10 rounded-3xl border px-6 py-8"
+          >
+            <div class="space-y-6">
+              <img
+                class="mx-auto h-auto w-16 rounded-full"
+                src={item.image}
+                alt={item.name}
+              />
+              <div class="text-center space-y-1">
+                {/* Name & Icon (clickable) */}
+                <h3 class="text-lg font-medium">
+                  <a
+                    href={`mailto:${item.email}`}
+                    class="flex items-center justify-center gap-2"
+                  >
+                    {/* Filled email icon (Heroicons) */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="h-5 w-5"
+                    >
+                      <path
+                        d="M1.5 4.875C1.5 3.83947 2.33947 3 3.375
+                           3h17.25c1.03553 0 1.875.83947
+                           1.875 1.875v14.25c0 1.03553-.83947
+                           1.875-1.875
+                           1.875H3.375A1.875 1.875 0
+                           011.5 19.125V4.875zm1.72.53A.75.75
+                           0 002.47 6.28l8.784 5.86c.4643.3095
+                           1.0785.3095 1.5428
+                           0l8.784-5.86a.75.75 0 10-.84-1.249l-8.784
+                           5.86a.25.25 0
+                           01-.28 0l-8.784-5.86z"
+                      />
+                    </svg>
+                    <span>{item.name}</span>
+                  </a>
+                </h3>
+                <p class="text-primary-950/70 dark:text-primary-200/70 text-base">
+                  {item.job}
+                </p>
               </div>
-            </li>
-          ))
-        }
+            </div>
+          </li>
+        ))}
       </ul>
     </div>
   </div>
