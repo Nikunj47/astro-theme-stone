@@ -4,6 +4,7 @@ import '@fontsource/inter/latin-500.css';
 import { ViewTransitions } from 'astro:transitions';
 import Footer from '../components/layout/Footer.astro';
 import Header from '../components/layout/Header.astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
 
 interface Props {
   description: string;
@@ -25,6 +26,7 @@ const { description, title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <SpeedInsights />
     <ViewTransitions />
   </head>
   <body
